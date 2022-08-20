@@ -2,10 +2,9 @@ import { FiPlusSquare } from 'react-icons/fi';
 
 import { Container } from './styles';
 import Logo from '../../assets/logo.svg';
-import React from 'react';
 
 interface IProps {
-  openModal: React.FC;
+  openModal: () => void;
 }
 
 function Header(props: IProps) {
