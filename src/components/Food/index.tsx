@@ -15,8 +15,8 @@ interface IFood {
 
 interface IProps {
   food: IFood;
-  handleDelete(id: Number): void;
-  handleEditFood(food: IFood): void;
+  handleDelete(id: Number): () => void;
+  handleEditFood(food: IFood): () => void;
 }
 
 function Food({ food, handleDelete, handleEditFood }: IProps) {

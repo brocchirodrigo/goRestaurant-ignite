@@ -11,7 +11,8 @@ import { Container } from './styles';
 
 interface IProps {
   name: string;
-  icon: any;
+  icon?: any;
+  placeholder?: string;
 }
 
 const Input = ({ name, icon: Icon, ...rest }: IProps) => {
